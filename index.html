@@ -30,11 +30,11 @@
 
 
 <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
-    <main id="main">
+    <main id="main1">
         <!-- 섹션1 메인비디오 -->
         <section id="section1">
             <div>
-                <div class="main">
+                <div class="videoCover">
                     <video id="mainVideo" autoplay muted loop> 
                         <source src="./video/mainVideo.mp4" type="video/mp4">
                     </video>
@@ -42,18 +42,25 @@
                 </div>
                 <script> // 타이핑 js
                     $('#videoText').typed({
-                        strings:['오늘의 득템'],
+                        strings:['오늘의  득템'],
                         typeSpeed:100,
                         loop:false,
                     })
                 </script>
                 <p class="flyingP1">어디서 어떤게 저렴할지 <br>더 이상 고민하지 마세요 </p>
                 <p class="flyingP2">저희가 먼저 찾아드릴게요 <br>오늘의 메뉴만 결정하세요 </p>
+                <p class="flyingP3">동네 맛집 사장님 분들께도 <br>가정의 따뜻한 어머님께도 </p>
+                <p class="flyingP4">오늘도 고생하신 직장인분도 <br>모두 편하게 클릭만 하세요 </p>
+                <!-- 비디오 스킵버튼 -->
+                <span class="skipBtn"><i class="fas fa-forward"></i> SKIP</span>
 
 
-                <div class="sub"> <!-- 영상 종료 후 프레임 -->
-
+                <div class="section1sub"> <!-- 영상 종료 후 프레임 -->
+                    <!-- 웹페이지 혹은 앱에 대한 대략의 설명이 들어가면 좋겠음 -->
+                    <!-- 웹페이지 혹은 앱에 대한 대략의 설명이 들어가면 좋겠음 -->
+                    웹페이지 혹은 앱에 대한 대략의 설명이 들어가면 좋겠음
                 </div>
+
                 <!-- 스크롤 다운 애니메이션 -->
                 <ul class="scroll-down">
                     <li> 
@@ -62,8 +69,64 @@
                 </ul>
             </div>
         </section>
-
-
     </main>
+    <main id="main2">
+        <!-- 섹션2 물가 동향 + nav 메뉴 -->
+        <section id="section2">
+            <div class="nav-Wrap">
+                <h1><a href="#" title="logo"><img src="" alt="로고이미지"></a></h1>
+                <nav id="nav">
+                    <span><a href="#" title="물가변동">물가변동</a></span>
+                    <span><a href="#" title="오늘의메뉴 추천">오늘의 메뉴</a></span>
+                    <span><a href="#" title="유저SNS">유저SNS</a></span>
+                    <span><a href="#" title="마트전단 & 행사">마트전단 & 행사</a></span>
+                    <span><a href="#" title="도소매 장터">도소매 장터</a></span>
+                </nav>
+            </div>
+
+            <div class="container75">
+                <!-- 좌측 최고변동률 물품 -->
+                <div class="peakWave">
+                    <video autoplay muted loop> 
+                        <source src="./video/peakWave.mp4" type="video/mp4">
+                    </video>
+                    <h2></h2>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 섹션3 오늘의 메뉴 추천 -->
+        <section id="section3">
+            오늘의 메뉴 추천
+        </section>
+
+
+        <!-- 섹션4 유저 게시물(레시피 or 요리사진) -->
+        <section id="section4">
+            유저 게시물
+        </section>
+
+
+        <!-- 섹션5 마트 전단, 행사 광고 -->
+        <section id="section5">
+            마트 전단, 행사 광고
+        </section>
+
+
+        <!-- 섹션6 소,도매 거래장터 -->
+        <section id="section6">
+            소,도매 거래장터
+        </section>
+
+
+        <!-- 푸터 -->
+        <footer>
+            푸터
+        </footer>
+    </main>
+
+
+
 </body>
 </html>
